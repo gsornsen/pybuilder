@@ -31,6 +31,7 @@ bootstrap()
 use_plugin("python.core")
 use_plugin("python.pytddmon")
 use_plugin("python.distutils")
+use_plugin("python.install_dependencies")
 
 use_plugin("copy_resources")
 use_plugin("filter_resources")
@@ -81,7 +82,7 @@ version = "0.12.0.dev"
 
 requires_python = ">=2.7,!=3.0,!=3.1,!=3.2,!=3.3,!=3.4,<3.9"
 
-default_task = ["analyze", "publish"]
+default_task = ["install_dependencies", "analyze", "publish"]
 
 
 @init
